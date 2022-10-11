@@ -1,9 +1,16 @@
 import React from 'react'
 import './assets/App.css';
+import {Contact, Hero, Header, Projects, Footer} from './pages'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className='app'>
+      <Header />
+      <Hero />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   )
 }
 

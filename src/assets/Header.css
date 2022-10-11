@@ -1,0 +1,30 @@
+.header{
+    position :fixed;
+    top: 0;
+    height: 10vh;
+    padding-left: var(--app-margin);
+    padding-right: var(--app-margin); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+.header_iconContainer{
+    display: inline;
+    align-items: center;
+    color: var(--baby-blue);
+    font-size: 2rem;
+}
+.header_navContainer{
+display: inline;
+}
+.header_listContainer{
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+}
+.header_listItem{
+    color: var(--baby-blue);
+    margin-left: 20px;
+}

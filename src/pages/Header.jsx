@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineHome as HomeIcon } from "react-icons/ai";
-import "../assets/Header.css";
+import "../assets/css/header.css";
 
 const Header = () => {
   return (

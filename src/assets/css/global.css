@@ -5,9 +5,14 @@
     rgba(7, 32, 65, 1) 0%,
     rgba(2, 11, 22, 1) 100%
   );
+  --drk-backgrnd-grdnt-transparent: linear-gradient(
+    90deg,
+    rgba(7, 32, 65, 0.8) 0%,
+    rgba(2, 11, 22, 0.8) 100%
+  );
   --baby-blue: #5ed5fa;
   --small-txt-clr: #8892b0;
-  --app-margin:50px;
+  --app-margin: 50px;
 }
 * {
   margin: 0;

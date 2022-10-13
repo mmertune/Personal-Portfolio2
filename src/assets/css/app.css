@@ -1,0 +1,22 @@
+.app {
+  display: grid;
+  grid-template-columns: var(--app-margin) 10vw 1fr 10vw var(--app-margin);
+  grid-template-rows: 100vh auto 90vh 10vh;
+}
+
+.grid_hero {
+  grid-row: 1;
+  grid-column: 3;
+}
+.grid_projects {
+  grid-row: 2;
+  grid-column: 3;
+}
+.grid_contact {
+  grid-row: 3;
+  grid-column: 3;
+}
+.grid_footer {
+  grid-row: 4;
+  grid-column: 3;
+}

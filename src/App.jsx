@@ -1,5 +1,5 @@
 import React from 'react'
-import './assets/App.css';
+import './assets/css/app.css';
 import {Contact, Hero, Header, Projects, Footer} from './pages'
 
 const App = () => {

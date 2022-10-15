@@ -10,7 +10,7 @@
 .projects_title {
   grid-column: 1/-1;
   grid-row: 1;
-  color: var(--baby-blue);
+  color: var(--big-txt-clr);
 }
 .projects_test1 {
   grid-column: 1;

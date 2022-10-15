@@ -4,10 +4,10 @@ import { Button } from "../components";
 
 const Hero = () => {
   return (
-    <div className="hero grid_hero">
+    <div className="hero grid_hero" id="hero">
       <h1 className="hero_intro">Hello, I'm</h1>
       <h2 className="hero_name">Marvens Mertune</h2>
-      <h2 className="hero_shortSummary">I build cool websites</h2>
+      <h2 className="hero_shortSummary">I put your ideas on the web</h2>
       <p className="hero_summary">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
         consectetur amet! Illo harum quia ea accusamus totam dolorem tenetur, ex

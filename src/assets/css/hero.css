@@ -9,6 +9,7 @@
 }
 .hero_name{
     font-size: 5rem;
+    color: var(--big-txt-clr);
 }
 .hero_shortSummary{
     font-size: 5rem;
@@ -18,6 +19,7 @@
     font-size: 1.3rem;
     width: 50%;
     margin-bottom: 30px;
+    color: var(--smaller-txt-clr);
 }
 .hero_bttnContainer{
 

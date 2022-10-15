@@ -4,7 +4,7 @@ import {Button} from "../components/"
 
 const Contact = () => {
   return (
-    <div className='contact grid_contact'>
+    <div className='contact grid_contact' id='contact'>
       <Button title="Contact Me!" />
     </div>
   )

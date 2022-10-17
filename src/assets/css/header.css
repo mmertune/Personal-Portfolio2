@@ -79,7 +79,7 @@
 /*  */
 @media screen and (max-width: 767px) {
   .header {
-    background-color: bisque;
+    /* background-color: bisque; */
   }
   .header_rightContainer{
     display: none;
@@ -97,7 +97,7 @@
     margin-left: 50px;
   }
   .header {
-    background-color: green;
+    /* background-color: green; */
   }
 
 }
@@ -107,7 +107,7 @@
 ***************************/
 @media screen and (min-width: 1600px) {
   .header {
-    background-color: red;
+    /* background-color: red; */
     padding-left: 5vw;
     padding-right: 5vw;
   }

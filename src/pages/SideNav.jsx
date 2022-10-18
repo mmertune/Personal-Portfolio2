@@ -12,7 +12,7 @@ const SideNav = () => {
   const { isDarkTheme, setTheme } = useContext(UIContext);
   return (
     <div className="sidenav">
-      <div className="sidenav_blur"></div>
+      <div className="sidenav_blur" onClick={()=>setBurgerIcon(!isBurgerIcon)}></div>
 
       <aside className={`sidenav_container ${isDarkTheme ? "sidenav_darkTheme": "sidenav_lightTheme"}`}>
         <div className="sidenav_closeContainer">

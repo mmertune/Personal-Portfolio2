@@ -14,7 +14,7 @@ const SideNav = () => {
     <div className="sidenav">
       <div className="sidenav_blur"></div>
 
-      <aside className="sidenav_container">
+      <aside className={`sidenav_container ${isDarkTheme ? "sidenav_darkTheme": "sidenav_lightTheme"}`}>
         <div className="sidenav_closeContainer">
           <div
             className="sidenav_closeIcon"

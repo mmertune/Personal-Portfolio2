@@ -2,7 +2,8 @@
 *   Global Styles   *
 ********************/
 :root {
-  --drk-backgrnd-clr: rgb(7, 32, 65);
+  --drk-backgrnd-clr: rgb(2, 11, 22);
+  --light-backgrnd-clr:#FBFBFB;
   --drk-backgrnd-grdnt: linear-gradient(
     90deg,
     rgba(7, 32, 65, 1) 0%,
@@ -26,10 +27,8 @@
   box-sizing: border-box;
 }
 html {
-  /* height: 100%;
-  width: 100%; */
-  background: var(--drk-backgrnd-clr);
-  background: var(--drk-backgrnd-grdnt);
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -49,6 +48,15 @@ body {
   display: grid;
   grid-template-columns: var(--app-margin) 10vw 1fr 10vw var(--app-margin);
   grid-template-rows: repeat(2, 100vh) auto 90vh 10vh;
+  /* background: var(--drk-backgrnd-clr);
+  background: var(--drk-backgrnd-grdnt); */
+}
+.app_lightTheme{
+background-color: var(--light-backgrnd-clr);
+}
+.app_darkTheme{
+  background: var(--drk-backgrnd-clr);
+  background: var(--drk-backgrnd-grdnt);
 }
 .grid_hero {
   grid-row: 1;

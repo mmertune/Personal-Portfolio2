@@ -27,7 +27,7 @@
   background: var(--drk-backgrnd-grdnt-transparent);
 }
 .header_lightTheme {
-  background: white;
+  background: var(--light-backgrnd-clr);
 }
 .header_leftContainer {
   align-items: center;

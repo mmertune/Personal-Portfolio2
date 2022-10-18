@@ -25,24 +25,24 @@ const SideNav = () => {
         </div>
 
         <div className="sidenav_innerContainer">
-          <div className="sidenav_homeContainer">
+          <div className="sidenav_homeContainer" onClick={()=>setBurgerIcon(!isBurgerIcon)}>
             <HashLink to="/#hero" smooth>
               <HomeIcon />
             </HashLink>
           </div>
           <nav className="sidenav_navContainer">
             <ul className="sidenav_listContainer">
-              <li className="sidenav_listItem">
+              <li className="sidenav_listItem" onClick={()=>setBurgerIcon(!isBurgerIcon)}>
                 <HashLink to="/#about" smooth>
                   &#60;<span>About</span>&#47;&#62;
                 </HashLink>
               </li>
-              <li className="sidenav_listItem">
+              <li className="sidenav_listItem" onClick={()=>setBurgerIcon(!isBurgerIcon)}>
                 <HashLink to="/#projects" smooth>
                   &#60;<span>Projects</span>&#47;&#62;
                 </HashLink>
               </li>
-              <li className="sidenav_listItem">
+              <li className="sidenav_listItem"  onClick={()=>setBurgerIcon(!isBurgerIcon)}>
                 <HashLink to="/#contact" smooth>
                   &#60;<span>Contact</span>&#47;&#62;
                 </HashLink>

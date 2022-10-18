@@ -1,21 +1,26 @@
 import React, { useContext } from "react";
 import { AiOutlineHome as HomeIcon } from "react-icons/ai";
 import { HashLink } from "react-router-hash-link";
-import "../assets/css/header.css";
 import useScrollDirection from "../hooks/scrollDirection";
 import { BsMoonStars as DarkIcon } from "react-icons/bs";
 import { MdOutlineLightMode as LightIcon } from "react-icons/md";
 import { UIContext } from "../context/UIContext";
 import { HiOutlineMenuAlt3 as BurgerIcon } from "react-icons/hi";
 import { MdClose as CloseIcon } from "react-icons/md";
+// import {SideNav} from "."
+import "../assets/css/header.css";
+
 const Header = () => {
   const { isDarkTheme, setTheme } = useContext(UIContext);
-  const { isDrawerOpen, setDrawer } = useContext(UIContext);
+  const { isBurgerIcon, setBurgerIcon } = useContext(UIContext);
 
   const scrollDirection = useScrollDirection();
+
   return (
     <header
-      className={`${scrollDirection === "down" ? "header header_hide" : "header"}`}
+      className={`${
+        scrollDirection === "down" ? "header header_hide" : "header"
+      } ${isDarkTheme ? "header_darkTheme" : "header_lightTheme"}`}
     >
       <div className="header_leftContainer">
         <HashLink to="/#hero" smooth>
@@ -51,10 +56,11 @@ const Header = () => {
       </div>
       <div
         className="header_burgerContainer"
-        onClick={() => setDrawer(!isDrawerOpen)}
+        onClick={() => setBurgerIcon(!isBurgerIcon)}
       >
-        {isDrawerOpen ? <CloseIcon /> : <BurgerIcon />}
+        {isBurgerIcon ? <BurgerIcon /> : <CloseIcon />}
       </div>
+      {/* {!isBurgerIcon && <SideNav />} */}
     </header>
   );
 };

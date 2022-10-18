@@ -1,0 +1,79 @@
+.sidenav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 40vw;
+  grid-template-rows: 10vh 1fr;
+  z-index: 150;
+}
+
+.sidenav_blur {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  backdrop-filter: blur(3px);
+  z-index: 160;
+}
+
+.sidenav_container {
+  grid-row: 1/-1;
+  grid-column: 2/-1;
+  background: var(--drk-backgrnd-grdnt-transparent);
+  z-index: 170;
+}
+.sidenav_closeContainer {
+  display: flex;
+  height: 10vh;
+  color: var(--baby-blue);
+  font-size: 2rem;
+  justify-content: right;
+  align-items: center;
+  margin-right: var(--app-margin);
+  z-index: 180;
+}
+.sidenav_closeIcon {
+  cursor: pointer;
+}
+.sidenav_innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  height: 70%;
+}
+.sidenav_navContainer{
+  height: 50%;
+}
+.sidenav_listContainer {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.sidenav_listItem{
+  font-size: 1rem;
+  color: var(--baby-blue);
+}
+.sidenav_listItem a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--baby-blue);
+}
+.sidenav_listItem span{
+  font-size: 1.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: var(--small-txt-clr);
+}
+.sidenav_themeContainer{
+  background: none;
+  border: none;
+  color: var(--baby-blue);
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 20px;
+}

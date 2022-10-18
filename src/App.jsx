@@ -9,7 +9,7 @@ const App = () => {
   const[isBurgerIcon, setBurgerIcon]=useState(true)
 
   return (
-    <div className={`app ${isDarkTheme ? "app_darkTheme" : "app_lightTheme"}`}>
+    <div className={`app ${isDarkTheme ? "app_darkTheme" : "app_lightTheme"} ${isBurgerIcon ? "":"app_preventScroll"}`}>
       <UIContext.Provider value={{isDarkTheme, setTheme, isBurgerIcon, setBurgerIcon}}>
         <Header />
         {!isBurgerIcon && <SideNav />}

@@ -4,6 +4,7 @@
 .header {
   position: fixed;
   top: 0;
+  z-index: 10;
   height: 10vh;
   padding-left: var(--app-margin);
   padding-right: var(--app-margin);
@@ -16,18 +17,24 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .header_hide {
   top: -10vh;
 }
+.header_darkTheme {
+  background: var(--drk-backgrnd-grdnt-transparent);
+}
+.header_lightTheme {
+  background: var(--light-backgrnd-clr);
+}
 .header_leftContainer {
   align-items: center;
-  font-size: 2rem;  
+  font-size: 2rem;
 }
 .header_leftContainer svg {
   display: inline-block;
-  
 }
 .header_leftContainer a {
   color: var(--baby-blue);
@@ -55,7 +62,7 @@
   font-size: 1.2rem;
   color: var(--small-txt-clr);
 }
-.header_listItem:hover span{
+.header_listItem:hover span {
   color: var(--baby-blue);
 }
 .header_themeContainer {
@@ -66,9 +73,11 @@
   cursor: pointer;
   margin-left: 80px;
 }
-.header_burgerContainer{
+.header_burgerContainer {
+  /* position: relative; */
+  /* z-index: 120; */
   display: none;
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: var(--baby-blue);
   cursor: pointer;
 }
@@ -76,35 +85,33 @@
 /*********************
 *   Mobile View View *
 *********************/
-/*  */
 @media screen and (max-width: 767px) {
-  .header {
-    /* background-color: bisque; */
-  }
-  .header_rightContainer{
+  /* .header {
+    background-color: bisque;
+  } */
+  .header_rightContainer {
     display: none;
   }
-  .header_burgerContainer{
+  .header_burgerContainer {
     display: block;
   }
 }
 
-/*******************************
-*   Tablet / Small Laptop View *
-*******************************/
+/********************************
+*   Tablet / Small Laptop View  *
+********************************/
 @media screen and (min-width: 768px) and (max-width: 1203px) {
   .header_listItem a {
     margin-left: 50px;
   }
-  .header {
-    /* background-color: green; */
-  }
-
+  /* .header {
+    background-color: green;
+  } */
 }
 
-/***************************
-*   Large Computer Screens *
-***************************/
+/****************************
+*   Large Computer Screens  *
+****************************/
 @media screen and (min-width: 1600px) {
   .header {
     /* background-color: red; */
@@ -128,5 +135,3 @@
     margin-left: 5vw;
   }
 }
-
-

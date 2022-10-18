@@ -86,9 +86,9 @@
 *   Mobile View View *
 *********************/
 @media screen and (max-width: 767px) {
-  .header {
-    /* background-color: bisque; */
-  }
+  /* .header {
+    background-color: bisque;
+  } */
   .header_rightContainer {
     display: none;
   }
@@ -104,9 +104,9 @@
   .header_listItem a {
     margin-left: 50px;
   }
-  .header {
-    /* background-color: green; */
-  }
+  /* .header {
+    background-color: green;
+  } */
 }
 
 /****************************

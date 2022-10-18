@@ -3,6 +3,7 @@ import { MdClose as CloseIcon } from "react-icons/md";
 import { UIContext } from "../context/UIContext";
 import { HashLink } from "react-router-hash-link";
 import { BsMoonStars as DarkIcon } from "react-icons/bs";
+import { AiOutlineHome as HomeIcon } from "react-icons/ai";
 import { MdOutlineLightMode as LightIcon } from "react-icons/md";
 import "../assets/css/sidenav.css";
 
@@ -24,6 +25,11 @@ const SideNav = () => {
         </div>
 
         <div className="sidenav_innerContainer">
+          <div className="sidenav_homeContainer">
+            <HashLink to="/#hero" smooth>
+              <HomeIcon />
+            </HashLink>
+          </div>
           <nav className="sidenav_navContainer">
             <ul className="sidenav_listContainer">
               <li className="sidenav_listItem">

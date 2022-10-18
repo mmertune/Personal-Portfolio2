@@ -41,6 +41,12 @@
   align-items: center;
   height: 70%;
 }
+.sidenav_homeContainer{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.sidenav_homeContainer a{
+color: var(--baby-blue);}
 .sidenav_navContainer{
   height: 50%;
 }

@@ -3,7 +3,6 @@ import { HashLink } from "react-router-hash-link";
 import "../assets/css/button.css";
 
 const Button = ({ title, type }) => {
-
   if (type === "link") {
     return (
       <div className="button_link">
@@ -19,9 +18,12 @@ const Button = ({ title, type }) => {
       // </input>h
       <button
         type="submit"
+        name="submit"
         // onClick={submitForm}
         className="button_submit"
-      >{title}</button>
+      >
+        {title}
+      </button>
     );
   }
 };

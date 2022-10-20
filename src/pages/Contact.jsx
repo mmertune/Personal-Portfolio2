@@ -9,6 +9,13 @@ const Contact = () => {
   // };
   return (
     <div className="contact grid_contact" id="contact">
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="text" name="subject" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
+
       <form
         action="submit"
         className="contact_formContainer"
@@ -17,11 +24,13 @@ const Contact = () => {
         data-netlify="true"
         onSubmit="submit"
       >
+        <input type="hidden" name="contact" value="Contact" />
         <div className="contact_nameEmailContainer">
           <TextField
             id="outlined-basic"
             label="Name"
             name="name"
+            type="text"
             variant="outlined"
             fullWidth={true}
             className="contact_nameField contact_inputArea"
@@ -30,6 +39,7 @@ const Contact = () => {
             id="outlined-basic"
             label="Email"
             name="email"
+            type="email"
             variant="outlined"
             required={true}
             fullWidth={true}
@@ -40,6 +50,7 @@ const Contact = () => {
           id="outlined-basic"
           label="Subject"
           name="subject"
+          type="text"
           variant="outlined"
           fullWidth={true}
           className="contact_subjectField contact_inputArea"
@@ -48,6 +59,7 @@ const Contact = () => {
           id="outlined-basic"
           label="Message"
           name="message"
+          type="text"
           variant="outlined"
           multiline={true}
           minRows={4}

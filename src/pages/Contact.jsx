@@ -9,12 +9,7 @@ const Contact = () => {
   // };
   return (
     <div className="contact grid_contact">
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <input type="text" name="subject" />
-        <input type="text" name="message" />
-      </form>
+
 
       <form className="contact_formContainer" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />

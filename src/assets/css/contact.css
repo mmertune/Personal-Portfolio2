@@ -13,5 +13,16 @@
 .contact_nameEmailContainer {
   display: flex;
 }
-.contact_nameField {
+/* affects placeholder while not clicked */
+.contact_inputArea label {
+  color: var(--baby-blue);
+}
+/* affects text cursor while waiting for input */
+.contact_inputArea  .MuiInputBase-root{
+    color: var(--baby-blue);
+}
+ 
+/* affects border while not clicked */
+.contact_inputArea fieldset {
+  border-color: var(--baby-blue);
 }

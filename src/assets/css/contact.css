@@ -1,6 +1,28 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* color: var(--baby-blue); */
+}
+.contact_nameEmailContainer {
+  display: flex;
+}
+/* affects placeholder while not clicked */
+.contact_inputArea label {
+  color: var(--baby-blue);
+}
+/* affects text cursor while waiting for input */
+.contact_inputArea  .MuiInputBase-root{
+    color: var(--baby-blue);
+}
+ 
+/* affects border while not clicked */
+.contact_inputArea fieldset {
+  border-color: var(--baby-blue);
 }

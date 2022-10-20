@@ -1,7 +1,13 @@
-.button{
-    background: none;
-    border: solid 1px var(--baby-blue);
-    color: var(--baby-blue);
-    padding: 1rem 2rem;
-    font-size: 1.3rem;
+.button {
+  width: fit-content;
+  font-size: 1.3rem;
+}
+.button a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: solid 1px var(--baby-blue);
+  color: var(--baby-blue);
 }

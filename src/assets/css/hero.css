@@ -1,26 +1,74 @@
+/*****************
+*   Hero Styles  *
+*****************/
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.hero_intro{
+.hero_intro {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--baby-blue);
+}
+.hero_name {
+  font-size: 5rem;
+  color: var(--big-txt-clr);
+}
+.hero_shortSummary {
+  font-size: 4.6rem;
+  margin-bottom: 10px;
+}
+.hero_summary {
+  font-size: 1.3rem;
+  width: 50%;
+  margin-bottom: 30px;
+  color: var(--smaller-txt-clr);
+}
+/****************
+*   Phone View  *
+****************/
+@media screen and (max-width: 500px) {
+    .hero_name {
+        font-size: 2.5rem;
+      }
+      .hero_intro {
+        font-size: 1.1rem;
+      }
+      .hero_shortSummary {
+        font-size: 2.1rem;
+      }
+      .hero_summary {
+        font-size: 1rem;
+        width: 100%;
+      }
+}
+/*****************
+*   Mobile View  *
+*****************/
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .hero_name {
+    font-size: 3rem;
+  }
+  .hero_shortSummary {
+    font-size: 2.7rem;
+  }
+  .hero_summary {
     font-size: 1rem;
-    margin-bottom: 10px;
+    width: 80%;
+  }
 }
-.hero_name{
-    font-size: 5rem;
-    color: var(--big-txt-clr);
-}
-.hero_shortSummary{
-    font-size: 5rem;
-    margin-bottom: 10px;
-}
-.hero_summary{
-    font-size: 1.3rem;
-    width: 50%;
-    margin-bottom: 30px;
-    color: var(--smaller-txt-clr);
-}
-.hero_bttnContainer{
-
+/********************************
+*   Tablet / Small Laptop View  *
+********************************/
+@media screen and (min-width: 768px) and (max-width: 1203px) {
+  .hero_name {
+    font-size: 4rem;
+  }
+  .hero_shortSummary {
+    font-size: 3.7rem;
+  }
+  .hero_summary {
+    width: 80%;
+  }
 }

@@ -11,20 +11,13 @@ const Contact = () => {
     <div className="contact grid_contact" id="contact">
       <form name="contact" netlify netlify-honeypot="bot-field" hidden>
         <input type="text" name="name" />
-        <input type="text" name="subject" />
         <input type="email" name="email" />
-        <textarea name="message"></textarea>
+        <input type="text" name="subject" />
+        <input type="text" name="message" />
       </form>
 
-      <form
-        action="submit"
-        className="contact_formContainer"
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        onSubmit="submit"
-      >
-        <input type="hidden" name="contact" value="Contact" />
+      <form className="contact_formContainer" name="contact" method="POST">
+        <input type="hidden" name="form-name" value="contact" />
         <div className="contact_nameEmailContainer">
           <TextField
             id="outlined-basic"

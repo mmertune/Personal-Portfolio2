@@ -1,6 +1,17 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* color: var(--baby-blue); */
+}
+.contact_nameEmailContainer {
+  display: flex;
+}
+.contact_nameField {
 }

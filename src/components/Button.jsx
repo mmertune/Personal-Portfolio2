@@ -2,14 +2,18 @@ import React from 'react'
 import { HashLink } from "react-router-hash-link";
 import "../assets/css/button.css"
 
-const Button = ({title}) => {
+const Button = ({title, type}) => {
+if(type==="link"){
   return (
-  //   <button className='button' onClick={}>
-  //     {title}
-  //   </button>
-  // 
-  <div className='button'><HashLink to="/#contact" smooth>Contact me!</HashLink></div>
+  <div className='button_link'><HashLink to="/#contact" smooth>{title}</HashLink></div>
   )
+  }
+  if(type==="button"){
+return(
+  <button className='button_submit'>{title}
+  </button>
+)
+  }
 }
 
 export default Button

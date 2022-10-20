@@ -27,7 +27,7 @@
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .sidenav_darkTheme {
-  background: var(--drk-backgrnd-grdnt-transparent);
+  background: var(--drk-backgrnd-grdnt);
 }
 .sidenav_lightTheme {
   background: var(--light-backgrnd-clr);

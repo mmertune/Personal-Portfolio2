@@ -13,18 +13,11 @@ const Contact = () => {
         <input type="text" name="name" />
         <input type="text" name="subject" />
         <input type="email" name="email" />
-        <input type="message" name="message" />
+        <input type="text" name="message" />
       </form>
 
-      <form
-        action="submit"
-        className="contact_formContainer"
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        onSubmit="submit"
-      >
-        <input type="hidden" name="contact" value="Contact" />
+      <form className="contact_formContainer" name="contact" method="POST">
+        <input type="hidden" name="contact" value="contact" />
         <div className="contact_nameEmailContainer">
           <TextField
             id="outlined-basic"

@@ -13,7 +13,7 @@ const Contact = () => {
         <input type="text" name="name" />
         <input type="text" name="subject" />
         <input type="email" name="email" />
-        <textarea name="message"></textarea>
+        <input type="message" name="message" />
       </form>
 
       <form

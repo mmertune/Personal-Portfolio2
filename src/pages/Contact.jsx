@@ -16,7 +16,7 @@ const Contact = () => {
         <input type="text" name="message" />
       </form>
 
-      <form className="contact_formContainer" name="contact" method="POST">
+      <form className="contact_formContainer" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <div className="contact_nameEmailContainer">
           <TextField

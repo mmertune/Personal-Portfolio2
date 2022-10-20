@@ -1,15 +1,29 @@
-import React from 'react'
+import React from "react";
 import { HashLink } from "react-router-hash-link";
-import "../assets/css/button.css"
+import "../assets/css/button.css";
 
-const Button = ({title}) => {
-  return (
-  //   <button className='button' onClick={}>
-  //     {title}
-  //   </button>
-  // 
-  <div className='button'><HashLink to="/#contact" smooth>Contact me!</HashLink></div>
-  )
-}
+const Button = ({ title, type }) => {
 
-export default Button
+  if (type === "link") {
+    return (
+      <div className="button_link">
+        <HashLink to="/#contact" smooth>
+          {title}
+        </HashLink>
+      </div>
+    );
+  }
+  if (type === "button") {
+    return (
+      // <input type='submit' className='button_submit'>{title}
+      // </input>h
+      <button
+        type="submit"
+        // onClick={submitForm}
+        className="button_submit"
+      >{title}</button>
+    );
+  }
+};
+
+export default Button;

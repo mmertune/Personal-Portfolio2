@@ -14,7 +14,7 @@ const Hero = () => {
         frontend/backend technologies with inspiring and motivated people
       </p>
       <div className="hero_bttnContainer">
-        <Button title="Contact Me!" />
+        <Button title="Contact Me!" type="link" />
       </div>
     </div>
   );

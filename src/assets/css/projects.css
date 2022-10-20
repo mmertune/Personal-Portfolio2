@@ -4,32 +4,34 @@
   grid-template-rows: auto;
   row-gap: 20px;
 }
-.projects_hrzntlFlex {
-  display: flex;
-}
 .projects_title {
   grid-column: 1/-1;
   grid-row: 1;
   color: var(--big-txt-clr);
 }
-.projects_test1 {
+.projects_featuredContainer1 {
+  display: flex;
   grid-column: 1;
   grid-row: 2;
 }
-.projects_test2 {
+.projects_featuredContainer2 {
+  display: flex;
   grid-column: 1;
   grid-row: 3;
 }
-.projects_test3 {
+.projects_featuredContainer3 {
+  display: flex;
   grid-column: 1;
   grid-row: 4;
 }
-.projects_test1Text {
-  width: 50%;
-}
-.img_test {
+.projects_featuredImg {
   object-fit: contain;
   flex: 1;
+  width: 50%;
+  border-radius: 10px;
+}
+.projects_featuredText {
+  padding-left: 20px;
   width: 50%;
 }
 .projects_bttnContainer {

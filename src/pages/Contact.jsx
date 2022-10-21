@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/css/contact.css";
 import { Button } from "../components/";
-import { TextField } from "@mui/material";
+// import { TextField } from "@mui/material";
 
 const Contact = () => {
   // const submitForm = (event) => {
@@ -13,54 +13,43 @@ const Contact = () => {
         <input type="text" name="name" />
         <input type="email" name="email" />
         <input type="text" name="subject" />
-        <input type="text" name="message" />
+        <textarea name="message"></textarea>
       </form>
-
+<h2 className="contact_header">Contact me!</h2>
       <form className="contact_formContainer" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <div className="contact_nameEmailContainer">
-          <TextField
-            id="outlined-basic"
-            label="Name"
-            name="name"
+          <input
             type="text"
-            variant="outlined"
-            fullWidth={true}
-            className="contact_nameField contact_inputArea"
+            name="name"
+            placeholder="Name"
+            className="contact_formName"
           />
-          <TextField
-            id="outlined-basic"
-            label="Email"
-            name="email"
+          <input
             type="email"
-            variant="outlined"
-            required={true}
-            fullWidth={true}
-            className="contact_emailField contact_inputArea"
+            name="email"
+            placeholder="Email"
+            required
+            className="contact_formEmail"
           />
         </div>
-        <TextField
-          id="outlined-basic"
-          label="Subject"
+        <input
+          type="text"
           name="subject"
-          type="text"
-          variant="outlined"
-          fullWidth={true}
-          className="contact_subjectField contact_inputArea"
+          placeholder="Subject"
+          className="contact_formSubject"
         />
-        <TextField
-          id="outlined-basic"
-          label="Message"
+        <textarea
           name="message"
-          type="text"
-          variant="outlined"
-          multiline={true}
-          minRows={4}
-          required={true}
-          fullWidth={true}
-          className="contact_messageField contact_inputArea"
-        />
-        <Button title="Submit" type="button" />
+          placeholder="Message"
+          required
+          maxLength={250}
+          rows={10}
+          className="contact_formTxtArea"
+        ></textarea>
+        <div className="contact_bttnContainer">
+          <Button title="Submit" type="button" />
+        </div>
       </form>
     </div>
   );

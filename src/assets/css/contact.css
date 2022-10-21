@@ -4,25 +4,49 @@
   align-items: center;
   justify-content: center;
 }
+.contact_header{
+  margin-bottom: 20px;
+}
 .contact_formContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: var(--drk-backgrnd-clr2);
   /* color: var(--baby-blue); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .contact_nameEmailContainer {
   display: flex;
+  margin: 20px 20px;
 }
-/* affects placeholder while not clicked */
-.contact_inputArea label {
-  color: var(--baby-blue);
+.contact_formName {
+  margin-right: 20px;
+  padding: 5px 5px;
+  font-size: 1rem;
 }
-/* affects text cursor while waiting for input */
-.contact_inputArea  .MuiInputBase-root{
-    color: var(--baby-blue);
+.contact_formEmail {
+  padding: 5px 5px;
+  font-size: 1rem;
 }
- 
-/* affects border while not clicked */
-.contact_inputArea fieldset {
-  border-color: var(--baby-blue);
+.contact_formSubject {
+  margin: 20px 20px;
+  padding: 5px 5px;
+  font-size: 1rem;
+}
+.contact_formTxtArea {
+  margin: 20px 20px;
+  padding: 5px 5px;
+  font-size: 1rem;
+  resize: none;
+}
+.contact_nameEmailContainer > input {
+  width: 50%;
+  font-size: 1rem;
+}
+.contact_bttnContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }

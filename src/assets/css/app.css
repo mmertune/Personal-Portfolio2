@@ -3,6 +3,8 @@
 ********************/
 :root {
   --drk-backgrnd-clr: rgb(2, 11, 22);
+  --drk-backgrnd-clr2: rgb(7, 32, 65);
+
   --light-backgrnd-clr: #fbfbfb;
   --drk-backgrnd-grdnt: linear-gradient(
     90deg,
@@ -129,9 +131,6 @@ body {
     grid-column: 2;
   }
 }
-
-
-
 
 /****************
 *   Phone View  *

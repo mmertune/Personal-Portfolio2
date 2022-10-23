@@ -8,7 +8,7 @@ const Contact = () => {
   //   event.preventDefault();
   // };
   return (
-    <div className="contact grid_contact">
+    <div className="contact grid_contact" id="contact">
       <form name="contact" netlify netlify-honeypot="bot-field" hidden>
         <input type="text" name="name" />
         <input type="email" name="email" />

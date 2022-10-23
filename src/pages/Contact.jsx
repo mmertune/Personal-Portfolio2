@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../assets/css/contact.css";
 import { Button } from "../components/";
+import { UIContext } from "../context/UIContext";
 // import { TextField } from "@mui/material";
 
 const Contact = () => {
+  const { isDarkTheme } = useContext(UIContext);
+
   // const submitForm = (event) => {
   //   event.preventDefault();
   // };
@@ -16,7 +19,7 @@ const Contact = () => {
         <textarea name="message"></textarea>
       </form>
 <h2 className="contact_header">Contact me!</h2>
-      <form className="contact_formContainer" name="contact" method="post">
+      <form className={`contact_formContainer ${isDarkTheme ? "contact_darkTheme" : "contact_lightTheme"}`} name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <div className="contact_nameEmailContainer">
           <input

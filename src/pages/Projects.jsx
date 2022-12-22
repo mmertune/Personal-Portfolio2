@@ -28,7 +28,7 @@ const Projects = () => {
           temporibus beatae officia, sunt dolorum omnis corrupti voluptates?
         </div>
       </div>
-      <div className="projects_featuredContainer3">
+      {/* <div className="projects_featuredContainer3">
         <img className="projects_featuredImg" src={techredditImage} alt="" />
         <div className="projects_featuredText">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
@@ -36,7 +36,7 @@ const Projects = () => {
           eaque sed enim ipsa aliquid magnam tempora quisquam. Ex optio
           doloribus corporis similique a, repellendus est.
         </div>
-      </div>
+      </div> */}
       <div className="projects_bttnContainer">
         <Button title="More Projects!" />
       </div>

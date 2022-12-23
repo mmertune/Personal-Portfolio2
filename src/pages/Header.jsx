@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AiOutlineHome as HomeIcon } from "react-icons/ai";
+// import { AiOutlineHome as HomeIcon } from "react-icons/ai";
 import { HashLink } from "react-router-hash-link";
 import useScrollDirection from "../hooks/scrollDirection";
 import { BsMoonStars as DarkIcon } from "react-icons/bs";
@@ -7,6 +7,8 @@ import { MdOutlineLightMode as LightIcon } from "react-icons/md";
 import { UIContext } from "../context/UIContext";
 import { HiOutlineMenuAlt3 as BurgerIcon } from "react-icons/hi";
 import { MdClose as CloseIcon } from "react-icons/md";
+import {ReactComponent as HomeIcon} from '../assets/images/drk_personal_logo.svg';
+
 // import {SideNav} from "."
 import "../assets/css/header.css";
 

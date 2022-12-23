@@ -3,7 +3,9 @@ import { MdClose as CloseIcon } from "react-icons/md";
 import { UIContext } from "../context/UIContext";
 import { HashLink } from "react-router-hash-link";
 import { BsMoonStars as DarkIcon } from "react-icons/bs";
-import { AiOutlineHome as HomeIcon } from "react-icons/ai";
+// import { AiOutlineHome as HomeIcon } from "react-icons/ai";
+import {ReactComponent as HomeIcon} from '../assets/images/drk_personal_logo.svg';
+
 import { MdOutlineLightMode as LightIcon } from "react-icons/md";
 import "../assets/css/sidenav.css";
 

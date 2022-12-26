@@ -1,10 +1,21 @@
-.about {
+/* .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .about_title{
     color: var(--big-text-clr);
+    margin-bottom: 30px;
+}
+.about_paragraphSect{
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+}
+.about_paragraph1, .about_paragraph2{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }

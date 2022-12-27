@@ -1,10 +1,63 @@
-.about {
+/* .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */
+
+.about_title {
+  color: var(--big-text-clr);
+  margin-bottom: 30px;
+}
+.about_paragraphSect {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.about_paragraph1,
+.about_paragraph2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
-.about_title{
-    color: var(--big-text-clr);
+.about_techList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about_techItem {
+  list-style-position: inside;
+}
+@media screen and (max-width: 500px) {
+  .about_paragraphSect {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .about_paragraph1,
+  .about_paragraph2 {
+    font-size: 1rem;
+  }
+  .about_techList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*****************
+*   Mobile View  *
+*****************/
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .about_paragraphSect {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .about_paragraph1,
+  .about_paragraph2 {
+    font-size: 1rem;
+  }
+}
+/********************************
+*   Tablet / Small Laptop View  *
+********************************/
+@media screen and (min-width: 768px) and (max-width: 1203px) {
+  .about_paragraphSect {
+    width: 80%;
+  }
 }
